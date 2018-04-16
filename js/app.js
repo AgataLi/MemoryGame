@@ -79,12 +79,11 @@ const playAgain = document.querySelector(".play-again");
 
 //-----------------------------------------------------------------------------------
 
-// one the page will be loaded, game starts
 window.onload = preparation();
 
 function preparation(){
 
-   for (let i=0; i < cards.length; i++) {
+  for (let i=0; i < cards.length; i++) {
     cards[i].classList.remove("open", "show", "match", "not-active");
     };
   //reseting moves, scores,hours,machedcards.
@@ -99,8 +98,6 @@ function preparation(){
   clock.innerHTML = "";
   //stop the time
   
-        //start game 
-
   //to shuffled cards
   shuffledCards = shuffle(pictures);
 
@@ -122,37 +119,24 @@ function preparation(){
   for (let i=0; i < cards.length; i++) {
       cards[i].addEventListener("click", time);
       cards[i].addEventListener("click", compareCards);
-      
-       }
-
+  }
 }
 
-  //I need to add event listener to every card
- 
-
-//adding event listener to the restart button
-
+//Event Listener  restart button
 restart.addEventListener('click', function() {
   restartFunction();
 });
 
 function restartFunction(){
-//removing all classes from cards
- 
   preparation();
- 
 }
 
 //comparing cards clicek by user. This is the event Listener function for all cards
 
 function compareCards() {
   for (let i=0; i < cards.length; i++) {
-      
       cards[i].removeEventListener("click", time);
-      
-       }
-
-
+  }
 
   //if card will be cliked change the class to open
   this.classList.toggle("open");
@@ -257,7 +241,6 @@ function ranking(){
    stars[0].style.color="#FFF";
    starsNumber = 0;
  } 
-
 }
 
 
