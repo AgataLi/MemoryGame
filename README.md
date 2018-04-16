@@ -60,7 +60,7 @@ User can also reset game, by clicking the reset button.
 
 
 
-I the project I was using:
+In the project I was using:
 * [MDN web docs] (https://developer.mozilla.org/son/docs/Tools)
 * [w3schools.com] (https://www.w3schools.com)
 * *JavaScript & jQuery. Interaktive Websites entwickeln* by Jon Duckett
