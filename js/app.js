@@ -203,9 +203,8 @@ function notTheSame(){
     openedCards = [];
     activ();
   }, 700);
-
-
 }
+
 
 function notActiv() {
   for (let i=0; i < cards.length; i++) {
@@ -229,18 +228,14 @@ function moveCalc(){
 }
 
 function ranking(){
-  if ((move >= 10) && (move < 14)){
+  if ((move >= 12) && (move < 16)){
     stars[2].style.color="#FFF";
     starsNumber = 2;
   }
-  else if ((move > 15) && (move < 20)){
+  else if (move > 17) {
     stars[1].style.color="#FFF";
     starsNumber = 1;
   }
-  else if(move > 21) {
-   stars[0].style.color="#FFF";
-   starsNumber = 0;
- } 
 }
 
 
